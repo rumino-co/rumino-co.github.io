@@ -170,7 +170,7 @@ img {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../images/hero.png') center/cover no-repeat;
+  background: url('../images/hero.jpg') center/cover no-repeat;
   z-index: 1;
 }
 
@@ -226,7 +226,7 @@ img {
 .page-hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../images/hero.png') center/cover no-repeat;
+  background: url('../images/hero.jpg') center/cover no-repeat;
 }
 
 .page-hero-bg::after {
