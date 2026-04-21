@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thanks.html
 
-Sitemap: https://minoru521019-blip.github.io/sitemap.xml
+Sitemap: https://rumino-co.github.io/sitemap.xml
