@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thanks.html
 
-Sitemap: https://rumino-co.github.io/sitemap.xml
+Sitemap: https://shimamoto-kensetsu.pages.dev/sitemap.xml
