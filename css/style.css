@@ -1,6 +1,6 @@
 /* ============================================
-   嶋本建設株式会社 - Corporate Website
-   Color Theme: Maldives Ocean
+   嶋本建設株式会社リサイクルセンター - Corporate Website
+   Color Theme: Eco Emerald Green
    ============================================ */
 
 /* --- Reset & Base --- */
@@ -31,14 +31,14 @@ img {
   height: auto;
 }
 
-/* --- Color Variables --- */
+/* --- Color Variables (Eco Emerald) --- */
 :root {
-  --primary: #0891b2;       /* Maldives ocean blue */
-  --primary-dark: #0e7490;  /* Deeper ocean */
-  --primary-darker: #155e75;/* Deep sea */
-  --accent: #06b6d4;        /* Bright cyan */
-  --light: #ecfeff;         /* Light cyan tint */
-  --gradient: linear-gradient(135deg, #0e7490 0%, #0891b2 40%, #06b6d4 100%);
+  --primary: #059669;        /* Emerald 600 */
+  --primary-dark: #047857;   /* Emerald 700 */
+  --primary-darker: #065f46; /* Emerald 800 */
+  --accent: #10b981;         /* Emerald 500 */
+  --light: #ecfdf5;          /* Emerald 50 */
+  --gradient: linear-gradient(135deg, #065f46 0%, #059669 45%, #10b981 100%);
   --text: #1e293b;
   --text-light: #64748b;
   --white: #ffffff;
@@ -81,9 +81,18 @@ img {
 
 .logo-text {
   color: var(--white);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.logo-text small {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
 }
 
 /* --- Navigation --- */
@@ -165,12 +174,13 @@ img {
   justify-content: center;
   overflow: hidden;
   margin-top: 80px;
+  background: var(--gradient);
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../images/hero.jpg?v=2') center/cover no-repeat;
+  background: url('../images/risaikuru2.webp') center/cover no-repeat;
   z-index: 1;
 }
 
@@ -178,7 +188,7 @@ img {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(14,116,144,0.85) 0%, rgba(8,145,178,0.7) 50%, rgba(6,182,212,0.6) 100%);
+  background: linear-gradient(135deg, rgba(6,95,70,0.88) 0%, rgba(5,150,105,0.78) 50%, rgba(16,185,129,0.66) 100%);
   z-index: 2;
 }
 
@@ -195,21 +205,21 @@ img {
   font-weight: 700;
   margin-bottom: 24px;
   letter-spacing: 4px;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 
 .hero-content p {
   font-size: 18px;
   line-height: 2;
-  text-shadow: 0 1px 5px rgba(0,0,0,0.2);
-  max-width: 700px;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.25);
+  max-width: 760px;
   margin: 0 auto;
 }
 
 .hero-content .cta-text {
   margin-top: 24px;
   font-size: 16px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* --- Page Hero (Sub pages) --- */
@@ -221,19 +231,20 @@ img {
   justify-content: center;
   margin-top: 80px;
   overflow: hidden;
+  background: var(--gradient);
 }
 
 .page-hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../images/hero.jpg?v=2') center/cover no-repeat;
+  background: url('../images/risaikuru1.webp') center 20%/cover no-repeat;
 }
 
 .page-hero-bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(14,116,144,0.88) 0%, rgba(8,145,178,0.75) 100%);
+  background: linear-gradient(180deg, rgba(6,95,70,0.45) 0%, rgba(5,150,105,0.6) 50%, rgba(6,95,70,0.85) 100%);
 }
 
 .page-hero-content {
@@ -248,7 +259,7 @@ img {
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 8px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .page-hero-content h1 {
@@ -316,7 +327,7 @@ img {
 
 .section-title .divider span:first-child {
   width: 40px;
-  background: #c4e8ef;
+  background: #c4efd7;
 }
 
 .section-title .divider span:last-child {
@@ -337,7 +348,7 @@ img {
 .company-table th {
   text-align: left;
   padding: 20px 24px;
-  width: 160px;
+  width: 180px;
   font-weight: 600;
   font-size: 15px;
   color: var(--text);
@@ -419,6 +430,245 @@ img {
   border-radius: 50%;
 }
 
+/* --- Waste Items Grid --- */
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.item-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--primary);
+  border-radius: 8px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(5,150,105,0.12);
+}
+
+.item-card h3 {
+  font-size: 20px;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.item-card p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.9;
+  margin-bottom: 12px;
+}
+
+.item-card ul {
+  list-style: none;
+}
+
+.item-card ul li {
+  font-size: 14px;
+  color: var(--text);
+  padding: 4px 0 4px 18px;
+  position: relative;
+}
+
+.item-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+/* --- Process Flow --- */
+.flow-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+  position: relative;
+}
+
+.flow-step {
+  background: var(--white);
+  border: 2px solid var(--light);
+  border-radius: 8px;
+  padding: 24px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.flow-step::after {
+  content: '▶';
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary);
+  font-size: 16px;
+  z-index: 2;
+}
+
+.flow-step:last-child::after {
+  display: none;
+}
+
+.flow-step .step-num {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.flow-step h4 {
+  font-size: 16px;
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.flow-step p {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* --- Feature Cards --- */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.feature-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  border-top: 4px solid var(--accent);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.feature-card .feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background: var(--light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.feature-card .feature-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.9;
+}
+
+/* --- Info Box (callouts) --- */
+.info-box {
+  padding: 24px 28px;
+  background: var(--light);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+  margin: 24px 0;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--text);
+}
+
+.info-box p + p {
+  margin-top: 8px;
+}
+
+.info-box strong {
+  color: var(--primary-dark);
+}
+
+/* --- License Cards --- */
+.license-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.license-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.license-card h4 {
+  font-size: 16px;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.license-card dl {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.license-card dt {
+  display: inline-block;
+  width: 90px;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.license-card dd {
+  display: inline;
+  color: var(--text);
+}
+
+.license-card dd::after {
+  content: '\A';
+  white-space: pre;
+}
+
 /* --- News --- */
 .news-list {
   list-style: none;
@@ -455,82 +705,6 @@ img {
   font-size: 15px;
 }
 
-/* --- Greeting Page --- */
-.greeting-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 16px;
-  margin-bottom: 32px;
-  border-bottom: 2px solid var(--light);
-  font-size: 14px;
-  color: var(--text-light);
-}
-
-.greeting-date {
-  font-weight: 500;
-}
-
-.greeting-author {
-  color: var(--primary-dark);
-  font-weight: 600;
-}
-
-.greeting-body {
-  max-width: 780px;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 2.1;
-  color: var(--text);
-}
-
-.greeting-body p {
-  margin-bottom: 24px;
-}
-
-.greeting-sign {
-  text-align: right;
-  margin-top: 40px;
-  font-weight: 600;
-  color: var(--primary-dark);
-}
-
-.back-to-news {
-  max-width: 780px;
-  margin: 48px auto 0;
-  text-align: center;
-}
-
-.back-link {
-  display: inline-block;
-  padding: 12px 32px;
-  border: 2px solid var(--primary);
-  color: var(--primary);
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.back-link:hover {
-  background: var(--primary);
-  color: var(--white);
-}
-
-/* --- News list link --- */
-.news-list li.news-link {
-  transition: background 0.2s;
-}
-
-.news-list li.news-link:hover {
-  background: var(--light);
-}
-
-.news-list li.news-link a {
-  display: contents;
-  color: inherit;
-}
-
 /* --- Contact Section --- */
 .contact-section {
   text-align: center;
@@ -550,13 +724,19 @@ img {
   font-weight: 700;
   color: var(--text);
   letter-spacing: 2px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   display: block;
 }
 
 .contact-phone::before {
   content: '\260E';
   margin-right: 12px;
+}
+
+.contact-hours {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 24px;
 }
 
 .contact-btn {
@@ -633,10 +813,11 @@ img {
 }
 
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.form-group select:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(8,145,178,0.1);
+  box-shadow: 0 0 0 3px rgba(5,150,105,0.1);
 }
 
 .form-group textarea {
@@ -673,20 +854,39 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(6,182,212,0.4);
+  box-shadow: 0 4px 16px rgba(16,185,129,0.4);
   transition: transform 0.3s, box-shadow 0.3s;
   z-index: 999;
 }
 
 .float-contact:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 24px rgba(6,182,212,0.5);
+  box-shadow: 0 6px 24px rgba(16,185,129,0.5);
 }
 
 .float-contact svg {
   width: 28px;
   height: 28px;
   fill: var(--white);
+}
+
+/* --- Parent Link Banner --- */
+.parent-link {
+  background: var(--light);
+  padding: 20px 24px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.parent-link a {
+  color: var(--primary-dark);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.parent-link a:hover {
+  color: var(--primary);
 }
 
 /* --- Footer --- */
@@ -718,7 +918,7 @@ img {
 }
 
 .footer-logo .logo-text {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--white);
 }
@@ -765,6 +965,14 @@ img {
     height: 64px;
   }
 
+  .logo-text {
+    font-size: 14px;
+  }
+
+  .logo-text small {
+    font-size: 10px;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -802,8 +1010,16 @@ img {
   }
 
   .hero {
-    height: 450px;
+    height: 480px;
     margin-top: 64px;
+  }
+
+  .hero-bg {
+    background-image: url('../images/risaikuru2-mobile.webp');
+  }
+
+  .page-hero-bg {
+    background-image: url('../images/risaikuru1-mobile.webp');
   }
 
   .hero-content h1 {
@@ -847,6 +1063,31 @@ img {
   }
 
   .business-list {
+    grid-template-columns: 1fr;
+  }
+
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-steps {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .flow-step::after {
+    content: '▼';
+    right: 50%;
+    top: auto;
+    bottom: -22px;
+    transform: translateX(50%);
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .license-grid {
     grid-template-columns: 1fr;
   }
 
