@@ -959,8 +959,49 @@ img {
   opacity: 0.7;
 }
 
+/* --- Anchor scroll offset (fixed header) --- */
+section[id], .contact-section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* --- Section "詳しく見る" button --- */
+.section-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 32px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.more-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.more-btn svg {
+  transition: transform 0.3s;
+}
+
+.more-btn:hover svg {
+  transform: translateX(4px);
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
+  section[id], .contact-section[id] {
+    scroll-margin-top: 64px;
+  }
+
   .header-inner {
     height: 64px;
   }
