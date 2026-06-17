@@ -4,7 +4,7 @@
 
 ## 公開URL
 
-https://shimamoto-kensetsu.pages.dev/shimamoto-recycle/
+https://shimamoto-kensetsu.co.jp/shimamoto-recycle/
 
 ## 構成
 
@@ -45,7 +45,7 @@ python -m http.server 8000
 - ソースリポジトリ: `rumino-co/rumino-co.github.io`
 - サブフォルダ: `shimamoto-recycle/`
 - Cloudflare Pages: 親リポジトリ（`rumino-co/rumino-co.github.io`）に紐づくプロジェクト `shimamoto-kensetsu` が自動デプロイ
-- 公開URL: `https://shimamoto-kensetsu.pages.dev/shimamoto-recycle/`
+- 公開URL: `https://shimamoto-kensetsu.co.jp/shimamoto-recycle/`
 
 ### URLの仕様（Cloudflare Pages）
 
@@ -53,9 +53,9 @@ python -m http.server 8000
 
 | ローカルファイル | 公開URL |
 |---|---|
-| `shimamoto-recycle/index.html` | `https://shimamoto-kensetsu.pages.dev/shimamoto-recycle/` |
-| `shimamoto-recycle/service.html` | `https://shimamoto-kensetsu.pages.dev/shimamoto-recycle/service` |
-| `shimamoto-recycle/profile.html` | `https://shimamoto-kensetsu.pages.dev/shimamoto-recycle/profile` |
+| `shimamoto-recycle/index.html` | `https://shimamoto-kensetsu.co.jp/shimamoto-recycle/` |
+| `shimamoto-recycle/service.html` | `https://shimamoto-kensetsu.co.jp/shimamoto-recycle/service` |
+| `shimamoto-recycle/profile.html` | `https://shimamoto-kensetsu.co.jp/shimamoto-recycle/profile` |
 | 等々 |  |
 
 そのため canonical / og:url / sitemap.xml は **無拡張子** で記述している。
@@ -68,11 +68,11 @@ python -m http.server 8000
 2. リポジトリのトップ → `shimamoto-recycle` フォルダに入る（無ければ作る）
 3. 「Add file」→「Upload files」→ HP/ の更新ファイルをドラッグ＆ドロップ
 4. 「Commit changes」
-5. 1〜2分後、`https://shimamoto-kensetsu.pages.dev/shimamoto-recycle/` に反映される
+5. 1〜2分後、`https://shimamoto-kensetsu.co.jp/shimamoto-recycle/` に反映される
 
 ## 関連サイト
 
-- 親会社: 嶋本建設株式会社 https://shimamoto-kensetsu.pages.dev/
+- 親会社: 嶋本建設株式会社 https://shimamoto-kensetsu.co.jp/
 
 ## 会社情報
 
