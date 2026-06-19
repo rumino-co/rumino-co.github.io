@@ -525,6 +525,25 @@ section[id], .contact-section[id] {
   margin-bottom: 24px;
 }
 
+.news-figure {
+  margin: 32px 0;
+}
+
+.news-figure img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.news-figure figcaption {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-light);
+  text-align: center;
+  line-height: 1.7;
+}
+
 .greeting-sign {
   text-align: right;
   margin-top: 40px;
