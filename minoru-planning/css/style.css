@@ -33,12 +33,12 @@ img {
 
 /* --- Color Variables --- */
 :root {
-  --primary: #f97316;       /* Terracotta orange */
-  --primary-dark: #ea580c;  /* Deep terracotta */
-  --primary-darker: #c2410c;/* Brick brown */
-  --accent: #fb923c;        /* Bright orange */
+  --primary: #fb923c;       /* Terracotta orange */
+  --primary-dark: #f97316;  /* Deep terracotta */
+  --primary-darker: #ea580c;/* Brick brown */
+  --accent: #fdba74;        /* Bright orange */
   --light: #fff7ed;         /* Light warm tint */
-  --gradient: linear-gradient(135deg, #ea580c 0%, #f97316 40%, #fb923c 100%);
+  --gradient: linear-gradient(135deg, #f97316 0%, #fb923c 40%, #fdba74 100%);
   --text: #1e293b;
   --text-light: #64748b;
   --white: #ffffff;
@@ -170,7 +170,7 @@ img {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../images/hero.svg?v=3') center/cover no-repeat;
+  background: url('../images/hero.svg?v=4') center/cover no-repeat;
   z-index: 1;
 }
 
@@ -178,7 +178,7 @@ img {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(234,88,12,0.85) 0%, rgba(249,115,22,0.7) 50%, rgba(251,146,60,0.6) 100%);
+  background: linear-gradient(135deg, rgba(249,115,22,0.78) 0%, rgba(251,146,60,0.62) 50%, rgba(253,186,116,0.52) 100%);
   z-index: 2;
 }
 
@@ -226,14 +226,14 @@ img {
 .page-hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../images/hero.svg?v=3') center/cover no-repeat;
+  background: url('../images/hero.svg?v=4') center/cover no-repeat;
 }
 
 .page-hero-bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(234,88,12,0.88) 0%, rgba(249,115,22,0.75) 100%);
+  background: linear-gradient(135deg, rgba(249,115,22,0.8) 0%, rgba(251,146,60,0.68) 100%);
 }
 
 .page-hero-content {
@@ -316,7 +316,7 @@ img {
 
 .section-title .divider span:first-child {
   width: 40px;
-  background: #ffe6c7;
+  background: #fff1e0;
 }
 
 .section-title .divider span:last-child {
@@ -692,7 +692,7 @@ section[id], .contact-section[id] {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(249,115,22,0.1);
+  box-shadow: 0 0 0 3px rgba(251,146,60,0.1);
 }
 
 .form-group textarea {
@@ -729,14 +729,14 @@ section[id], .contact-section[id] {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(251,146,60,0.4);
+  box-shadow: 0 4px 16px rgba(253,186,116,0.4);
   transition: transform 0.3s, box-shadow 0.3s;
   z-index: 999;
 }
 
 .float-contact:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 24px rgba(251,146,60,0.5);
+  box-shadow: 0 6px 24px rgba(253,186,116,0.5);
 }
 
 .float-contact svg {
