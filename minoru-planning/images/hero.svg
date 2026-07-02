@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ecfeff"/>
-      <stop offset="1" stop-color="#cffafe"/>
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#ffedd5"/>
     </linearGradient>
     <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#a5f3fc"/>
-      <stop offset="1" stop-color="#67e8f9"/>
+      <stop offset="0" stop-color="#fed7aa"/>
+      <stop offset="1" stop-color="#fdba74"/>
     </linearGradient>
     <g id="house">
-      <polygon points="-14,0 70,-52 154,0" fill="#0e7490"/>
+      <polygon points="-14,0 70,-52 154,0" fill="#c2410c"/>
       <rect x="0" y="0" width="140" height="96" fill="#ffffff"/>
-      <rect x="58" y="40" width="30" height="56" fill="#155e75" rx="2"/>
-      <rect x="16" y="24" width="28" height="28" fill="#cffafe" stroke="#0e7490" stroke-width="3"/>
-      <rect x="100" y="24" width="28" height="28" fill="#cffafe" stroke="#0e7490" stroke-width="3"/>
+      <rect x="58" y="40" width="30" height="56" fill="#9a3412" rx="2"/>
+      <rect x="16" y="24" width="28" height="28" fill="#ffedd5" stroke="#c2410c" stroke-width="3"/>
+      <rect x="100" y="24" width="28" height="28" fill="#ffedd5" stroke="#c2410c" stroke-width="3"/>
     </g>
     <g id="tree">
       <rect x="-6" y="0" width="12" height="28" fill="#7c5f4c" rx="3"/>
-      <circle cx="0" cy="-26" r="34" fill="#2dd4bf"/>
-      <circle cx="-22" cy="-8" r="22" fill="#5eead4"/>
-      <circle cx="22" cy="-8" r="22" fill="#14b8a6"/>
+      <circle cx="0" cy="-26" r="34" fill="#4ade80"/>
+      <circle cx="-22" cy="-8" r="22" fill="#86efac"/>
+      <circle cx="22" cy="-8" r="22" fill="#22c55e"/>
     </g>
     <g id="cloud" fill="#ffffff" opacity="0.9">
       <ellipse cx="0" cy="0" rx="58" ry="24"/>
@@ -41,13 +41,13 @@
   <use href="#cloud" transform="translate(1120 190) scale(0.6)"/>
 
   <!-- Distant hills -->
-  <path d="M0 470 Q 260 360 520 452 Q 760 530 1040 430 Q 1320 340 1600 450 L1600 700 L0 700 Z" fill="#baf3fb"/>
+  <path d="M0 470 Q 260 360 520 452 Q 760 530 1040 430 Q 1320 340 1600 450 L1600 700 L0 700 Z" fill="#fee4c8"/>
 
   <!-- Ground -->
   <path d="M0 520 Q 400 496 800 512 Q 1200 528 1600 508 L1600 700 L0 700 Z" fill="url(#ground)"/>
 
   <!-- Road -->
-  <path d="M700 700 L760 520 L840 520 L960 700 Z" fill="#e0f2f7"/>
+  <path d="M700 700 L760 520 L840 520 L960 700 Z" fill="#f1e4d8"/>
   <path d="M810 700 L800 520" stroke="#ffffff" stroke-width="8" stroke-dasharray="26 30" fill="none"/>
 
   <!-- Houses (left) -->
