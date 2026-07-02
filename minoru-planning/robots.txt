@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shimamoto-kensetsu.co.jp/minoru-planning/sitemap.xml
