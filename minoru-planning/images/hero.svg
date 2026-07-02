@@ -5,15 +5,15 @@
       <stop offset="1" stop-color="#ffedd5"/>
     </linearGradient>
     <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fed7aa"/>
-      <stop offset="1" stop-color="#fdba74"/>
+      <stop offset="0" stop-color="#ffe6c7"/>
+      <stop offset="1" stop-color="#fed7aa"/>
     </linearGradient>
     <g id="house">
-      <polygon points="-14,0 70,-52 154,0" fill="#c2410c"/>
+      <polygon points="-14,0 70,-52 154,0" fill="#ea580c"/>
       <rect x="0" y="0" width="140" height="96" fill="#ffffff"/>
-      <rect x="58" y="40" width="30" height="56" fill="#9a3412" rx="2"/>
-      <rect x="16" y="24" width="28" height="28" fill="#ffedd5" stroke="#c2410c" stroke-width="3"/>
-      <rect x="100" y="24" width="28" height="28" fill="#ffedd5" stroke="#c2410c" stroke-width="3"/>
+      <rect x="58" y="40" width="30" height="56" fill="#c2410c" rx="2"/>
+      <rect x="16" y="24" width="28" height="28" fill="#ffedd5" stroke="#ea580c" stroke-width="3"/>
+      <rect x="100" y="24" width="28" height="28" fill="#ffedd5" stroke="#ea580c" stroke-width="3"/>
     </g>
     <g id="tree">
       <rect x="-6" y="0" width="12" height="28" fill="#7c5f4c" rx="3"/>
