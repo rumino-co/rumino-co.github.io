@@ -318,7 +318,8 @@ img {
 
 .section-title .divider span:first-child {
   width: 40px;
-  background: #fff1e0;
+  background: var(--accent);
+  opacity: 0.5;
 }
 
 .section-title .divider span:last-child {
