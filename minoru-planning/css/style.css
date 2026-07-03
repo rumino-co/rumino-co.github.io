@@ -495,6 +495,38 @@ section[id], .contact-section[id] {
 }
 
 /* --- News Article --- */
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--light);
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.news-date-inline {
+  font-weight: 500;
+}
+
+.news-author {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.news-body {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 2.1;
+  color: var(--text);
+}
+
+.news-body p {
+  margin-bottom: 24px;
+}
+
 .news-figure {
   margin: 32px 0;
 }
